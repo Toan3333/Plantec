@@ -1,0 +1,57 @@
+.contact-1
+	.content
+		a
+			text-decoration-line: underline
+			text-decoration-style: solid
+			text-decoration-skip-ink: none
+			text-decoration-thickness: auto
+			text-underline-offset: auto
+			text-underline-position: from-font
+	.contact-1-form
+		@apply lg:rem:w-[920px] w-full mx-auto mt-base flex flex-col gap-8
+		.form-field
+			@apply flex items-center lg:gap-20 gap-5
+			.left
+				@apply rem:w-[146px] flex-shrink-0
+				label
+					@apply text-xl font-normal
+			&.phone
+				.left
+					@apply flex flex-col
+					span
+						@apply rem:text-[12px] font-secondary
+			&.email
+				.left
+					@apply flex flex-col
+					span
+						@apply rem:text-[12px] font-secondary
+			.right
+				@apply flex-1
+				input
+					@apply w-full h-12 border border-Neutral-200 p-2
+				textarea
+					@apply w-full rem:h-[230px] border border-Neutral-200 p-2
+.contact-2
+
+	.contact-2-form
+		@apply flex flex-col gap-8 lg:rem:w-[920px] w-full mx-auto mt-base
+	.show-form-field 
+		@apply flex lg:gap-20 gap-5
+		.left
+			@apply rem:w-[146px] flex-shrink-0
+			label
+				@apply text-xl font-normal
+		&.phone
+			.left
+				@apply flex flex-col
+				span
+					@apply rem:text-[12px] font-secondary
+		&.email
+			.left
+				@apply flex flex-col
+				span
+					@apply rem:text-[12px] font-secondary
+		.right
+			@apply flex-1
+			.text
+				@apply font-secondary text-lg

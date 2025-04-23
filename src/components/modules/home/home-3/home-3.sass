@@ -1,0 +1,83 @@
+@media (max-width: 1279.98px)
+	.home-3
+		.home-3-main
+			.left
+				@apply w-[13rem]
+			.right
+				width: calc(100% - 13rem)
+				.item
+					@apply p-3
+					&::before
+						@apply top-[-1rem]
+		.home-3-main-2
+			@apply gap-0 mt-15
+			.right
+				.item
+					@apply w-[10rem]
+					&::before
+						@apply top-[-0.6rem]
+					&::after
+						@apply top-[-0.6rem]
+		.home-3-constructor
+			.item
+				&::before
+					@apply top-[-0.5rem]
+				&::after
+					@apply top-[-0.5rem]
+		.home-3-bottom
+			.home-3-bototm-item
+				&::before
+					@apply top-[-0.5rem]
+				&::after
+					@apply top-[-0.5rem]
+@media (max-width: 1023.98px)
+	.home-3
+		.home-3-main
+			@apply flex-col
+			.right
+				@apply w-full mt-base
+		.home-3-main-2
+			@apply flex-col
+			.right
+				@apply w-full mt-base
+@media (max-width: 767.98px)
+	.home-3
+		.home-3-main
+			.right
+				.steps
+					@apply grid grid-cols-2 gap-base
+					.item
+						@apply p-2
+						&::before
+							@apply hidden
+		.home-3-main-2 
+			.right
+				.steps
+					@apply flex-col gap-5
+					.item
+						@apply w-full mr-0
+						&::before
+							content: none
+						&::after
+							
+							content: none
+				.wrap
+					@apply w-full
+					.item
+						@apply w-full
+					.icon
+						@apply hidden
+		.home-3-constructor
+			.item
+				@apply w-full
+				&::before
+					content: none
+				&::after
+					content: none
+		.home-3-bottom
+			.home-3-bototm-item
+				@apply w-full
+				&::before
+					content: none
+				&::after
+					content: none

@@ -1,1 +1,60 @@
-footer 
+footer.footer(class="bg-Neutral-950 py-10 font-secondary relative")
+	.social-fixed(class="fixed rem:bottom-[103px] right-0 z-100")
+		a.button-to-top(href="#")
+			i.fa-light.fa-arrow-up-to-line
+	.container
+		.footer-top(class="flex items-center justify-between pb-10 border-b border-b-white/20") 
+			.left 
+				h2(class="text-5xl font-bold text-Neutral-White uppercase") Contact Us
+			.mid 
+				.footer-contact(class="flex items-center gap-3") 
+					.icon 
+						a(href="#" class="w-8 h-8 inline-flex items-center justify-center bg-Neutral-White rounded-full text-Neutral-Black")
+							i.fa-solid.fa-phone
+					.content(class="flex flex-col") 
+						a(href="#" class="text-2xl font-bold text-Neutral-White rem:mt-[6px]") +84-28-3925-5842
+				.footer-contact-bottom(class="pl-12") 
+					a(href="#" class="font-secondary inline-flex items-center rem:gap-[6px] text-sm font-normal text-Neutral-White ") 
+						span Fax 
+						span +84-28-3925-5843 
+						
+			.right 
+				a(href="#" class="py-4 px-6 border border-Neutral-White text-Neutral-White inline-flex items-center justify-center gap-3")  
+					.icon(class="text-xl font-normal") 
+						i.fa-regular.fa-envelope
+					span(class="font-normal font-secondary") plac.vn@plantec.co.jp
+		.footer-bottom(class="mt-10") 
+			.footer-logo(class="rem:w-[240px] rem:h-[27px] mb-base") 
+				a(href="#" class="w-full h-full block")
+					img(src="./img/PLANTEC_logo_white.svg", alt="" class="w-full h-full object-cover")
+			.wrapper(class="flex justify-between")
+				.col-left(class="rem:w-[357px] text-Neutral-White") 
+					ul.footer-nav
+						li PLANTEC ARCHITECTS COMPANY LIMITED
+						li 
+							a(href="#") # 905, Zen Plaza, 54-56 Nguyen Trai, District 1, Ho Chi Minh City, Vietnam
+						li 
+							a(href="#" class="map")
+								.icon 
+									i.fa-solid.fa-location-dot
+								span Google Map
+				.col-right(class="text-Neutral-White")
+					ul.footer-menu 
+						li 
+							a(href="#") TOP
+						li 
+							a(href="#") About us
+						li 
+							a(href="#") Solution
+						li 
+							a(href="#") Project
+						li 
+							a(href="#") Recruit
+						li 
+							a(href="#") Contact
+					.site-map(class="flex items-center gap-1 mb-base") 
+						a(href="#") Site map
+						span /
+						a(href="#") Privacy policy
+					.copy-right 
+						.text(class="opacity-50") © 2025 PLANTEC. All Rights Reserved. Web design by Canh Cam.

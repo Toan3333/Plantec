@@ -1,0 +1,24 @@
+.project-detail
+	.project-detail-data
+		.item
+			@apply flex items-center gap-3 relative  last:border-none last:pr-0
+			&::before
+				content: ""
+				@apply absolute right-0 w-[1px] rem:h-[33px] bg-[#DCDCDC]
+			&:nth-child(2)
+				&::before
+					@apply right-[-1.3rem]
+			&:nth-child(5)
+				&::before
+					@apply right-[-1.3rem]
+			&:last-child
+				@apply pl-5
+				&::before
+					content: none
+			&:nth-child(3)
+				@apply pl-5
+				&::before
+					content: none
+				
+			span
+				@apply font-secondary text-lg font-normal 

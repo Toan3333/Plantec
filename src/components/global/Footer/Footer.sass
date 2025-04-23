@@ -1,0 +1,36 @@
+.footer
+	.footer-top
+		.right
+			a
+				&:hover
+					@apply bg-Neutral-White text-Neutral-950
+	.footer-bottom
+		.col-left
+			ul.footer-nav
+				@apply flex flex-col gap-3
+				li
+					a
+						&.map
+							@apply flex items-center gap-3
+		.col-right
+			ul.footer-menu
+				@apply flex items-center gap-5 mb-3
+				li
+					a
+						@apply relative border-r border-r-Neutral-White pr-5
+						// &::before
+						// 	content: ""
+						// 	@apply absolute right-5
+@media (max-width: 1023.98px)
+	.footer
+		.footer-bottom
+			.wrapper
+				@apply flex-col gap-base
+@media (max-width: 767.98px)
+	.footer
+		.footer-top
+			@apply flex-col gap-5
+		.footer-bottom
+			.col-right
+				ul.footer-menu
+					@apply flex-wrap

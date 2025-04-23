@@ -1,0 +1,36 @@
+.solution-detail-banner
+	.top
+		text-decoration-style: solid
+		text-decoration-skip-ink: none
+		text-decoration-thickness: auto
+		text-underline-offset: auto
+		text-underline-position: from-font
+	&::before
+		content: ""
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%)
+		@apply absolute top-0 left-0 w-full h-full pointer-events-none
+.solution-detail-issue
+	ul
+		li
+			@apply text-lg font-normal text-Neutral-Black
+.solution-detail-1
+	.solution-detail-1-main
+		ul
+			@apply flex-col flex gap-3
+			li
+				@apply text-lg font-normal font-secondary
+		.col-right
+			@apply flex justify-center
+.solution-detail-2
+	.wrapper
+		ul
+			@apply flex-col flex gap-3
+			li
+				@apply text-lg font-normal font-secondary
+
+.solution-detail-3
+	.wrapper
+		ul
+			@apply flex-col flex gap-3
+			li
+				@apply text-lg font-normal font-secondary

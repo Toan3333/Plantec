@@ -1,0 +1,52 @@
+.home-1
+	margin-top: calc(-1 * var(--header-height))
+	.swiper
+		.home-1-banner
+			@apply relative
+			&::before
+				background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.35) 53.01%, rgba(0, 0, 0, 0.00) 100%)
+				content: ""
+				@apply absolute w-full h-full top-0 left-0 pointer-events-none z-10
+	.swiper-pagination-wrapper
+		@apply mt-base
+		.swiper-pagination-bullet
+			@apply w-2 h-2 bg-transparent  border border-Neutral-White opacity-100
+			&-active
+				@apply bg-Neutral-White
+@media (max-width: 1023.98px)
+	.home-1
+		.swiper
+			.home-1-banner
+				.content
+					@apply pl-10 bottom-20
+					h2
+						@apply text-3xl
+		.swiper-pagination-wrapper
+			@apply bottom-15 left-10
+@media (max-width: 767.98px)
+	.home-1-mobile
+		margin-top: calc(-1 * var(--header-height))
+	
+		.swiper
+			.home-1-banner-mobile
+				height: 100svh
+				@apply relative
+				&::before
+					background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.35) 53.01%, rgba(0, 0, 0, 0.00) 100%)
+					content: ""
+					@apply absolute w-full h-full pointer-events-none top-0 left-0
+				a
+					@apply w-full h-full
+					img
+						@apply w-full h-full object-cover
+				.content
+					@apply px-3 bottom-20
+					h2
+						line-height: 50px
+						@apply text-5xl
+		.swiper-pagination-wrapper-mobile
+			@apply bottom-15 left-10
+			.swiper-pagination-bullet
+				@apply w-2 h-2 bg-transparent  border border-Neutral-White opacity-100
+				&-active
+					@apply bg-Neutral-White

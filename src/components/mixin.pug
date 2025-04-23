@@ -54,9 +54,234 @@ mixin btnSecondary()
 			span(class="icon to-right") 
 				i.fa-regular.fa-arrow-right
 				i.fa-regular.fa-arrow-right
-
-
-				
-
-
-
+mixin ServiceSection()
+	.container 
+		h2(class="title-48 mb-base") SERVICE 
+		.content(class="flex flex-col gap-6 mb-20") 
+			.desc(class="text-lg font-normal text-Neutral-Black font-secondary") Plantec has local subsidiaries in Vietnam (Ho Chi Minh City, Hanoi) and Thailand (Bangkok), and boasts more than 10 years of experience since the start of business in overseas locations.
+			.desc(class="text-lg font-normal text-Neutral-Black font-secondary") Plantec has local subsidiaries in Vietnam (Ho Chi Minh City, Hanoi) and Thailand (Bangkok), and boasts more than 10 years of experience since the start of business in overseas locations. 
+			.desc(class="text-lg font-normal text-Neutral-Black font-secondary") Plantec has local subsidiaries in Vietnam (Ho Chi Minh City, Hanoi) and Thailand (Bangkok), and boasts more than 10 years of experience since the start of business in overseas locations.
+		.wrapper 
+			.content(class="text-black flex flex-col md:flex-row items-center gap-6 justify-center mb-15") 
+				.left(class="text-32 font-normal") The Value of 
+				.image(class="rem:w-[345px] h-10")
+					img(src="./img/text.svg", alt="" class="w-full h-full object-contain")
+				.right(class="text-32 font-normal")  with overseas offices
+			.wrapper-list(class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-10 gap-y-12")
+				.item(class="flex flex-col items-center") 
+					.top(class="flex items-center gap-3") 
+						.number(class="rem:w-[52px] flex-shrink-0 rem:h-[52px] bg-Primary-Primary_01 rounded-full inline-flex items-center justify-center text-Neutral-White text-2xl font-medium") 1
+						.text(class="font-secondary") 
+							span(class="text-Primary-Primary_01") Optimal cost management 
+							|  based on our overseas experience
+					.bottom(class="mt-6") 
+						.icon(class="rem:w-[140] rem:h-[120px]") 
+							a(href="#" class="" class="w-full h-full block")
+								img(src="./img/svg-1.svg", alt="" class="w-full h-full object-cover")  
+				.item(class="flex flex-col items-center") 
+					.top(class="flex items-center gap-3") 
+						.number(class="rem:w-[52px] flex-shrink-0 rem:h-[52px] bg-Primary-Primary_01 rounded-full inline-flex items-center justify-center text-Neutral-White text-2xl font-medium") 2
+						.text-primary(class="font-secondary text-Primary-Primary_01") Optimal cost management based on our overseas experience
+					.bottom(class="mt-6") 
+						.icon(class="rem:w-[140] rem:h-[120px]") 
+							a(href="#" class="" class="w-full h-full block")
+								img(src="./img/svg-2.svg", alt="" class="w-full h-full object-cover")  
+				.item(class="flex flex-col items-center") 
+					.top(class="flex items-center gap-3") 
+						.number(class="rem:w-[52px] rem:h-[52px] flex-shrink-0 bg-Primary-Primary_01 rounded-full inline-flex items-center justify-center text-Neutral-White text-2xl font-medium") 3
+						.text(class="font-secondary") Optimal cost management based on our overseas experience
+					.bottom(class="mt-6") 
+						.icon(class="rem:w-[140] rem:h-[120px]") 
+							a(href="#" class="" class="w-full h-full block")
+								img(src="./img/svg-3.svg", alt="" class="w-full h-full object-cover")  
+				.item(class="flex flex-col items-center") 
+					.top(class="flex items-center gap-3") 
+						.number(class="rem:w-[52px] rem:h-[52px] flex-shrink-0 bg-Primary-Primary_01 rounded-full inline-flex items-center justify-center text-Neutral-White text-2xl font-medium") 4
+						.text(class="font-secondary") Optimal cost management based on our overseas experience
+					.bottom(class="mt-6") 
+						.icon(class="rem:w-[140] rem:h-[120px]") 
+							a(href="#" class="" class="w-full h-full block")
+								img(src="./img/svg-4.svg", alt="" class="w-full h-full object-cover")  
+				.item(class="flex flex-col items-center") 
+					.top(class="flex items-center gap-3") 
+						.number(class="rem:w-[52px] rem:h-[52px] flex-shrink-0 bg-Primary-Primary_01 rounded-full inline-flex items-center justify-center text-Neutral-White text-2xl font-medium") 5
+						.text(class="font-secondary") Optimal cost management based on our overseas experience
+					.bottom(class="mt-6") 
+						.icon(class="rem:w-[140] rem:h-[120px]") 
+							a(href="#" class="" class="w-full h-full block")
+								img(src="./img/svg-5.svg", alt="" class="w-full h-full object-cover")  
+				.item(class="flex flex-col items-center") 
+					.top(class="flex items-center gap-3") 
+						.number(class="rem:w-[52px] rem:h-[52px] flex-shrink-0 bg-Primary-Primary_01 rounded-full inline-flex items-center justify-center text-Neutral-White text-2xl font-medium") 6
+						.text(class="font-secondary") Optimal cost management based on our overseas experience
+					.bottom(class="mt-6") 
+						.icon(class="rem:w-[140] rem:h-[120px]") 
+							a(href="#" class="" class="w-full h-full block")
+								img(src="./img/svg-6.svg", alt="" class="w-full h-full object-cover")  
+mixin GeneralSection()
+	.container 
+		h2(class="text-32 font-medium text-center text-Neutral-Black mb-base") Providing comprehensive support throughout the project, from site selection to completion,
+		.home-3-main(class="flex items-center justify-between")
+			.left(class="rem:w-[262px] flex-shrink-0")
+				h3(class="text-2xl font-medium text-Neutral-500-main") General Project Flow
+			.right(class="w-[calc(100%-13.645833333333334rem)]") 
+				.steps(class="flex items-center justify-between")
+					.item(class="py-6 pl-6 pr-3 bg-Neutral-500-main") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Site Selection
+					.item(class="py-6 pl-6 pr-3 bg-Neutral-500-main") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Basic Plan
+					.item(class="py-6 pl-6 pr-3 bg-Neutral-500-main") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Basic Design
+					.item(class="py-6 pl-6 pr-3 bg-Neutral-500-main") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Tender/ Bidding
+					.item(class="py-6 pl-6 pr-3 bg-Neutral-500-main") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Detailed Design
+					.item(class="py-6 pl-6 pr-3 bg-Neutral-500-main") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Contrustion
+		.home-3-main-2(class="flex items-center gap-7 mt-base")
+			.left(class="rem:w-[262px] flex-shrink-0")
+				h3(class="text-2xl font-medium text-Neutral-500-main") General Project Flow
+			.right(class="w-[calc(100%-13.645833333333334rem)]") 
+				.steps(class="flex items-center")
+					.item(class="py-3 px-2 bg-Neutral-Black mr-[4rem]") 
+						.text(class="text-lg font-normal text-Neutral-White font-secondary") Real Estate
+					.wrap(class="flex items-center")
+						.item(class="text-lg font-normal text-Neutral-White font-secondary bg-Neutral-Black py-3 px-2 rem:w-[284px] rem:h-[74px] text-center inline-flex flex-col justify-center") Design Office
+						.icon(class="rem:w-[510px]")
+							a(href="#" class="ratio-contain ratio:pt-[74_510]") 
+								img(src="./img/Union.svg", alt="" class="ml-[-2.5rem] ")
+		.home-3-constructor(class="mt-6 flex justify-end") 
+			.item(class="py-3 px-2 bg-Neutral-Black rem:h-[74px] rem:w-[305px] inline-flex flex-col justify-center text-center") 
+				.text(class="text-lg font-normal text-Neutral-White font-secondary") Real Estate
+		.home-3-bottom
+			.home-3-bototm-item(class="bg-Primary-Primary_01 py-3 px-30 rem:h-[74px] flex items-center justify-center")
+				img(src="./img/plantec-image.svg", alt="")
+mixin MissionSection()
+	.container 
+		h2(class="title-48") Mission/Core Value
+		.home-4-main(class="") 
+			.left(class="rem:w-[600px] relative") 
+				.circle(class="w-full rem:h-[600px] rounded-full bg-linear-5")
+				.right(class="rem:w-[1192px] absolute top-[60%] -translate-y-2/4 left-[40%] text-Neutral-Black font-secondary")
+					.mission(class="flex rem:gap-[91px]")
+						.title(class="rem:w-[128px] flex-shrink-0 text-2xl font-bold") Mission
+						.content 
+							h3(class="text-2xl font-bold mb-6") We ordinarily achieve the extraordianry
+							.desc(class="text-xl font-normal") Together with our customers, communities and partnes, we create groundbreaking and experiences for a better life and society.
+					.core(class="flex rem:gap-[84px] mt-15")
+						.title(class="rem:w-[128px] flex-shrink-0 text-2xl font-bold") Core Value
+						.wrap(class="flex flex-col gap-6")
+							.content(class="flex rem:gap-[91px]") 
+								h3(class="text-2xl font-bold mb-6 rem:w-[227px] flex-shrink-0") 
+									span(class="text-Primary-Primary_02") Respect 
+									| Others
+								.desc(class="text-xl font-normal") Together with our customers, communities and partnes, we create groundbreaking and experiences for a better life and society.
+							.content(class="flex rem:gap-[91px]") 
+								h3(class="text-2xl font-bold mb-6 rem:w-[227px] flex-shrink-0") 
+									span(class="text-Primary-Primary_02") Respect 
+									| Others
+								.desc(class="text-xl font-normal") Together with our customers, communities and partnes, we create groundbreaking and experiences for a better life and society.
+							.content(class="flex rem:gap-[91px]") 
+								h3(class="text-2xl font-bold mb-6 rem:w-[227px] flex-shrink-0") 
+									span(class="text-Primary-Primary_02") Respect 
+									| Others
+								.desc(class="text-xl font-normal") Together with our customers, communities and partnes, we create groundbreaking and experiences for a better life and society.
+								
+							
+mixin MessageSection()
+	.container 
+		h2.title-48 Top Message
+		.meesage-wrap(class="flex flex-col md:gap-20 gap-5")
+			-for(var i = 0; i < 3; i++)
+				.message-main(class="flex flex-col md:flex-row gap-base mt-base")
+					.col-left(class="md:w-5/12 w-full")
+						.image
+							a(href="#" class="img-ratio ratio:pt-[315_560] lozad")
+								img(src="./img/1.jpg", alt="") 
+					.col-right(class="md:w-7/12 w-full font-secondary")
+						.format-content 
+							p.desc(class="text-lg font-normal text-Neutral-Black font-secondary") We, Plantec, as a member of the global community, believe that our mission is to contribute to the realization of a better society. If we can not contribute to achieve a better society, there is no significance to our existence.
+							p.desc(class="text-lg font-normal text-Neutral-Black font-secondary") We, Plantec, as a member of the global community, believe that our mission is to contribute to the realization of a better society. If we can not contribute to achieve a better society, there is no significance to our existence.
+							p.desc(class="text-lg font-normal text-Neutral-Black font-secondary") We, Plantec, as a member of the global community, believe that our mission is to contribute to the realization of a better society. If we can not contribute to achieve a better society, there is no significance to our existence.
+							p.desc(class="text-lg font-normal text-Neutral-Black font-secondary") We, Plantec, as a member of the global community, believe that our mission is to contribute to the realization of a better society. If we can not contribute to achieve a better society, there is no significance to our existence.
+							p.desc(class="text-lg font-normal text-Neutral-Black font-secondary") We, Plantec, as a member of the global community, believe that our mission is to contribute to the realization of a better society. If we can not contribute to achieve a better society, there is no significance to our existence.
+						.wrap(class="flex justify-end md:rem:mt-[74px] mt-base")
+							.info(class="flex flex-col") 
+								.top(class="flex items-center gap-3")
+									.company(class="text-lg font-bold text-Neutral-Black") Plantec, Inc.
+									.headquarters(class="text-lg font-normal") (Global Headquarters)
+								.bottom(class="flex items-center gap-3") 
+									.job(class="text-lg font-bold text-Neutral-Black") Chief Executive Officer
+									.name(class="text-lg font-bold")  Naoyuki Koyama
+mixin CompanySection()
+	.container 
+		h2.title-48 Company Outline
+		.title(class="text-center text-5xl font-normal text-Neutral-Black my-10") VIETNAM 
+		.company-main(class="font-secondary") 
+			.item(class="py-8 flex items-center rem:gap-[200px] border-t border-t-Neutral-500-main") 
+				.col-left(class="rem:w-[168px] flex-shrink-0")
+					h3(class="text-lg font-bold") Company name
+				.col-right
+					.text(class="text-lg font-normal") PLANTEC ARCHITECTS COMPANY LIMITED
+			.item(class="py-8 flex items-center rem:gap-[200px] border-t border-t-Neutral-500-main") 
+				.col-left(class="rem:w-[168px] flex-shrink-0")
+					h3(class="text-lg font-bold") Company name
+				.col-right
+					.text(class="text-lg font-normal") PLANTEC ARCHITECTS COMPANY LIMITED
+					.text(class="text-lg font-normal") October 3, 2013 (Local corporation)
+			.item(class="py-8 flex items-center rem:gap-[200px] border-t border-t-Neutral-500-main") 
+				.col-left(class="rem:w-[168px] flex-shrink-0")
+					h3(class="text-lg font-bold") Company name
+				.col-right
+					.text(class="text-lg font-normal") PLANTEC ARCHITECTS COMPANY LIMITED
+					.text(class="text-lg font-normal") October 3, 2013 (Local corporation)
+			.item(class="py-8 flex items-center rem:gap-[200px] border-t border-t-Neutral-500-main") 
+				.col-left(class="rem:w-[168px] flex-shrink-0")
+					h3(class="text-lg font-bold") Board of members
+				.col-right
+					.col-right-list(class="flex gap-16")
+						.column(class="rem:w-[275px] flex-shrink-0") 
+							ul(class="flex flex-col gap-6") 
+								li President
+								li President
+								li President
+								li President
+								li President
+						.column 
+							ul(class="flex flex-col gap-6")  
+								li President
+								li President
+								li President
+								li President
+								li President
+			.item(class="py-8 flex items-center rem:gap-[200px] border-t border-t-Neutral-500-main") 
+				.col-left(class="rem:w-[168px] flex-shrink-0")
+					h3(class="text-lg font-bold") Location
+				.col-right
+					.text(class="text-lg font-normal") #905, Zen Plaza, 54-56 Nguyen Trai, District 1, Ho Chi Minh City, Vietnam
+					.location(class="text-lg font-normal flex items-center gap-6 mt-3") 
+						a(href="#") Tel: +84-28-3925-5842
+						a(href="#") Fax: +84-28-3925-5843
+						a(href="#" class="py-2 px-8 border border-Neutral-Black") Google map
+			.item(class="py-8 flex items-center rem:gap-[200px] border-t border-t-Neutral-500-main") 
+				.col-left(class="rem:w-[168px] flex-shrink-0")
+					h3(class="text-lg font-bold") E-mail
+				.col-right
+					a(href="#" class="text-lg font-normal") plac.vn@plantec.co.jp
+mixin TitleBreadcrumb()
+	.box-title-breadcrum(class="bg-Primary-Primary_03 rem:py-[50px] rem:h-[160px]")
+		h1(class="rem:text-[52px] font-normal text-center text-white") ABOUT US
+mixin ButtonPrimary()
+	a.button-primary(href="#") 
+		span Read More
+		.icon 
+			i.fa-light.fa-arrow-right-long
+mixin projectItem()
+	.item 
+		.image 
+			a(href="./projectDetail.html" class="img-ratio ratio:pt-[293_440] lozad zoom-img")
+				img(src="./img/1.jpg", alt="") 
+		.content(class="mt-3 flex items-center")
+			.tag(class="text-2xl font-normal") 【Vietnam】
+			.h3(class="text-2xl font-normal") 
+				a(href="#") Acecook Vietnam Head Office

@@ -1,4 +1,14 @@
 .title-64
 	@apply text-4xl md:text-5xl lg:text-6xl xl:text-64 font-bold uppercase leading-normal
 .title-40
-	@apply text-3xl lg:text-5xl font-bold
+	@apply text-3xl lg:text-5xl font-normal text-Neutral-Black uppercase
+.title-32
+	@apply lg:text-32 text-28 font-normal uppercase text-Neutral-Black text-center relative
+	&::before
+		content: ""
+		@apply absolute left-2/4 -translate-x-2/4 w-20 bg-Neutral-Black h-[2px] bottom-[-1rem]
+.title-48
+	@apply lg:text-6xl text-4xl font-normal uppercase text-Neutral-Black text-center relative
+	&::before
+		content: ""
+		@apply absolute left-2/4 -translate-x-2/4 w-20 bg-Neutral-Black h-[2px] bottom-[-1rem]

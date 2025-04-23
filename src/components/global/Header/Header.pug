@@ -1,2 +1,77 @@
-header
-	
+header.header
+	form.search-bar-container(action="", class="")
+		.searchbox(class="w-full relative cursor-pointer") 
+			input#search-btn(type="text", class="searchinput", placeholder="Tìm kiếm...", class="px-4 py-2 rounded bg-Neutral-White shadow-lg w-full cursor-pointer")
+			.search-icon(class="absolute top-2/4 -translate-y-2/4 right-0 pr-5 text-Primary-Primary_01")
+				i.fa-sharp.fa-regular.fa-magnifying-glass
+	.container 
+		.header-main(class="lg:flex items-center justify-between hidden") 
+			.header-logo(class="rem:w-[216px] rem:h-[25px]") 
+				a(href="#" class="w-full h-full block lozad")
+					img(src="./img/PLANTEC_logo_white.svg", alt="" class="w-full h-full object-cover") 
+			.header-menu 
+				ul.header-nav 
+					li 
+						a(href="#")  
+							i.fa-solid.fa-house
+					li
+						a(href="./about.html") 
+							span(data-hover="ABOUT US") ABOUT US
+					li 
+						a(href="./solutionList.html") 
+							span(data-hover="SOLUTION") SOLUTION
+					li 
+						a(href="./projectList.html") 
+							span(data-hover="PROJECT") PROJECT
+					li 
+						a(href="./recruit.html") 
+							span(data-hover="RECRUIT") RECRUIT
+					li 
+						a(href="./contact.html") 
+							span(data-hover="CONTACT") CONTACT
+					li 
+						.header-right(class="flex items-center") 
+							.header-search(class="rem:text-[18px] ") 
+								i.fa-regular.fa-magnifying-glass
+					li 
+						.language(class="text-Neutral-White") 
+							.header-language(class="flex rem:gap-[10px]")
+								.icon 
+									i.fa-regular.fa-globe
+								span EN
+								.arrow 
+									i.fa-solid.fa-caret-down
+					li 
+						.country
+							select#country(name="country")
+								option(value="") Chọn quốc gia
+								option(value="vn") Việt Nam
+								option(value="us") Hoa Kỳ
+		.header-main-mobile(class="flex lg:hidden items-center justify-between")
+			.header-logo-mobile(class="w-[9rem]")
+				a(href="#" class="img-ratio ratio:pt-[55_477]")
+					img(src="./img/PLANTEC_logo_white.svg", alt="") 
+			.header-right-mobile(class="flex lg:hidden items-center gap-2")
+				.header-search-mobile
+					.header-search-mobile-icon
+						i.fa-regular.fa-magnifying-glass 
+				.header-bar-mobile
+					.header-bar 
+						i.fa-solid.fa-bars
+
+	.header-nav-mobile(class="block lg:hidden")
+		ul(class="flex items-center text-white")
+			li
+				a(href="./home.html") Trang chủ
+			li
+				a(href="./about.html") GIỚI THIỆU
+			li
+				a(href="./productList.html") SẢN PHẨM
+			li
+				a(href="./menu.html") THỰC ĐƠN
+			li
+				a(href="#") VĂN HOÁ CÀ PHÊ
+			li
+				a(href="./recruitmentList.html") TUYỂN DỤNG
+			li
+				a(href="./contact.html") LIÊN HỆ					

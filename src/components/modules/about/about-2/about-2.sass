@@ -1,0 +1,19 @@
+.about-2
+	ul.about-2-menu 
+		@apply flex items-center justify-center gap-4
+		li
+			@apply rem:w-[218px] flex py-3 px-6 border border-Neutral-Black text-xl font-normal text-Neutral-Black  text-center transition-all ease-linear
+			&:hover
+				@apply bg-Neutral-Black text-Neutral-White
+			
+			a
+				@apply w-full whitespace-nowrap
+				&.active
+					@apply bg-Neutral-Black text-Neutral-White
+@media (max-width: 767.98px)
+	.about-2
+		@apply overflow-hidden
+		ul.about-2-menu
+			@apply overflow-x-auto whitespace-nowrap
+			
+					

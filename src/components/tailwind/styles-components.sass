@@ -1,8 +1,78 @@
 @layer components
 	.item-comp
 		@apply flex
+	ul.page-numbers
+		@apply flex items-center gap-6 font-secondary
+		li
+			a
+				@apply w-12 h-12 inline-flex items-center justify-center border border-Neutral-Black
+				&.current
+					@apply bg-Neutral-Black text-Neutral-White
+				&:hover
+					@apply bg-Neutral-Black text-Neutral-White
+	.button-primary
+		@apply py-3 px-6 border border-Neutral-Black inline-flex items-center justify-center gap-3
+		span
+			@apply text-lg font-normal
+		&:hover
+			@apply bg-Neutral-Black text-Neutral-White
+			span
+				@apply -translate-x-[1px] transition-all duration-200 ease-linear
+		&.white
+			@apply border border-Neutral-White text-Neutral-White
+			&:hover
+				@apply bg-Neutral-White text-Neutral-Black
+		&.black
+			@apply bg-black text-Neutral-White
+		&.secondary
+			@apply bg-Neutral-500-main text-Neutral-White border-none
 	.button-to-top
-		@apply opacity-0 pointer-events-none
+		@apply opacity-0 pointer-events-none w-12 h-12 inline-flex items-center justify-center bg-Neutral-800  rounded-b-1 text-32 text-white
+		
 		&.active
 			@apply opacity-100 pointer-events-auto
-	
+	.home-3
+		.home-3-main
+			.right
+				.item
+					@apply relative
+					&::before
+						content: url("../img/right.svg")
+						@apply absolute right-[-1.25rem] top-0 rem:h-[74px]
+		.home-3-main-2
+			.right
+				.item
+					@apply relative rem:h-[74px] flex-col flex items-center justify-center
+					&::before
+						content: url("../img/icon-right-black.svg")
+						@apply absolute right-[-1.25rem] top-0 rem:h-[74px]
+					&::after	
+						content: url("../img/icon-left-black.svg")
+						@apply absolute left-[-1.25rem] top-0 rem:h-[74px]
+				.item-union
+					
+					&::before
+						content: url("../img/icon-right-black.svg")
+						@apply absolute right-[-1.25rem] top-0 rem:h-[74px]
+					&::after	
+						content: url("../img/icon-left-black.svg")
+						@apply absolute left-[-1.25rem] top-0 rem:h-[74px]
+		.home-3-constructor
+			.item
+				@apply relative
+				&::before
+					content: url("../img/icon-right-black.svg")
+					@apply absolute right-[-1.25rem] top-0 rem:h-[74px]
+				&::after	
+					content: url("../img/icon-left-black.svg")
+					@apply absolute left-[-1.25rem] top-0 rem:h-[74px]
+		.home-3-bottom
+			@apply  flex justify-end mt-base
+			.home-3-bototm-item
+				@apply relative rem:w-[1096px]
+				&::before
+					content: url("../img/right-orange.svg")
+					@apply absolute right-[-1.25rem] top-0 rem:h-[74px]
+				&::after	
+					content: url("../img/left-orange.svg")
+					@apply absolute left-[-1.25rem] top-0 rem:h-[74px]

@@ -1,17 +1,73 @@
 .header
-	@apply  py-4 bg-Neutral-White sticky left-0 right-0 z-100 top-0
-	.header-nav
-		@apply flex justify-center items-center xl:gap-11 lg:gap-5
+	@apply py-6 sticky left-0 right-0 z-100 top-0 
+	ul.header-nav
+		@apply flex justify-between items-center xl:gap-11 lg:gap-5
 		li
 			a
-				@apply text-lg font-semibold text-Neutral-900 pb-1 border-b border-transparent 
-				
+				@apply rem:text-[18px] font-normal text-Neutral-White h-full   overflow-hidden inline-block
+				span
+					transition: transform 500ms
+					@apply inline-block relative border-b border-b-transparent
+					&::after
+						content: attr(data-hover)
+						@apply absolute top-full left-0 translate-y-0 border-b border-transparent
+				&:hover
+					span
+						@apply -translate-y-full
+						&::after
+							@apply border-b-Neutral-White
+							
+
+			.language
+				@apply rounded-lg border border-Neutral-300 bg-white/10 py-2 px-4
+			.country
+				select
+					@apply rounded-lg border border-Neutral-300 bg-white/10 py-2 px-4 text-Neutral-White
 			
 			&[class*='current']
 				&>a
 					@apply text-red-300
+	.header-right
+		@apply text-Neutral-White
 	.header-bar
-		@apply w-12 h-12 flex-shrink-0 inline-flex items-center justify-center text-Neutral-White bg-red-400 backdrop-blur-sm text-2xl
+		backdrop-filter: blur(6px)
+		@apply w-12 h-12 flex-shrink-0 inline-flex items-center justify-center text-Neutral-White bg-white/20 rounded-1  text-2xl
+	.header-search-mobile
+		@apply  text-Neutral-White text-2xl
+	&.active
+		@apply bg-Neutral-White shadow-Dropshadow-Light
+		.header-logo
+			img
+				content: url("../img/PLANTEC_logo_black.svg")
+		.header-menu
+			ul.header-nav
+				li
+					a
+						@apply text-Neutral-500-main border-b border-b-transparent
+						&:hover
+							@apply border-b border-b-Neutral-950
+					&[class*='current']
+						&>a
+							@apply border-b border-b-Neutral-950 text-Neutral-950
+					.language
+						background: rgba(129, 129, 129, 0.10)
+						@apply border border-Neutral-300 text-Neutral-500-main
+					.country
+						select
+							background: rgba(129, 129, 129, 0.10)
+							@apply border border-Neutral-300 text-Neutral-500-main
+		.header-main-mobile
+			.header-logo-mobile
+				img
+					content: url("../img/PLANTEC_logo_black.svg")
+			.header-right-mobile
+				.header-search-mobile
+					@apply text-black
+				.header-bar
+					@apply text-black
+		.header-right
+			@apply text-Neutral-500-main
+					
 	.search-bar-container
 		position: absolute
 		top: 100%
@@ -47,7 +103,7 @@
 			top: 100%
 			left: 0
 			box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05)
-			background-color: #dc7420
+			background-color: #fff
 			width: 100vw
 			height: calc(100dvh - var(--header-height))
 			z-index: 9999
@@ -68,7 +124,7 @@
 				@apply flex flex-col items-stretch w-full
 				li
 					a
-						@apply text-Neutral-White py-4 px-[15px] border-b border-b-Neutral-White flex items-center text-[16px]
+						@apply text-Neutral-Black py-4 px-[15px] border-b border-b-Neutral-White flex items-center text-[16px]
 				li
 					&[class*='current']
 						&>a

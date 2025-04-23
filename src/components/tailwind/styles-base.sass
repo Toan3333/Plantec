@@ -1,6 +1,7 @@
 @layer base
 	html
 		scroll-padding-top: 100px
+		scroll-behavior: smooth
 	html, body
 		font-size: 15px
 		@screen md
@@ -50,7 +51,7 @@
 		&>div
 			@apply absolute top-0 left-0 w-full h-full transition-all duration-300
 	body
-		@apply text-[#333333] text-base font-primary
+		@apply text-Neutral-Black text-base font-primary
 	.row
 		@apply flex flex-wrap -mx-[7.5px] lg:-mx-5
 	.col
@@ -109,3 +110,5 @@
 		@apply lg:mb-10 mb-8
 	.mt-base
 		@apply lg:mt-10 mt-8
+	.gap-base
+		@apply lg:gap-10 gap-8
